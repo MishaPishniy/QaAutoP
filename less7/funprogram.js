@@ -5,8 +5,6 @@ function add(a, b) {
 console.log(add(2, 3)); // 5
 console.log(add(2, 3)); // 5 (завжди той самий результат)
 
-
-
 let total = 0;
 function addToTotal(num) {
   total += num; // Змінює глобальну змінну

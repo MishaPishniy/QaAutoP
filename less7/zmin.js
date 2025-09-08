@@ -10,7 +10,6 @@ myFunction();
 console.log(globalVar); // Працює
 //console.log(localVar); // Помилка! Не доступна поза функцією
 
-
 function addNumbers(a, b) {
   let sum = a + b; // Локальна змінна
   return sum;
@@ -18,7 +17,6 @@ function addNumbers(a, b) {
 
 console.log(addNumbers(2, 3)); // 5
 // console.log(sum); // Помилка! sum не існує поза функцією
-
 
 let external = 'Зовнішня';
 

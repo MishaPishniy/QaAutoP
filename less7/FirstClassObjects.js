@@ -1,5 +1,4 @@
-let sayHi = function() 
-{ 
-    console.log('Hi'); 
+let sayHi = function () {
+  console.log('Hi');
 }; // Присвоєння
 sayHi(); // Hi
