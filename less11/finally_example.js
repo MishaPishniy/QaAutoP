@@ -1,0 +1,1 @@
+Promise.resolve("OK").finally(() => console.log("Кінець"));
