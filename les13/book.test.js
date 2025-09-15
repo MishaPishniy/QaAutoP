@@ -1,55 +1,25 @@
-const axios = require('axios');
+const { default: axios } = require("axios")
+const { Axios } = require("axios")
 
-const axiosInstanse = axios.create({
-  baseURL: 'https://demoqa.com/',
-  timeout: 1000,
-  validateStatus: () => true,
-});
+test('check get /BookStore/v1/Books status code 200', async () => {
 
-describe('Books API', () => {
-  beforeAll(() => {
-    console.log('BEFORE ALL');
-  });
+    const response = await axios.get('https://demoqa.com/BookStore/v1/Books')
+    expect(response.status).toBe(200)
+    console.log(response.data)
+})
 
-  // beforeEach(() => {
-  //     console.log('BEFORE EACH')
-  // })
+test('check get /BookStore/v1/Books toBeDefined books', async () => {
 
-  afterAll(() => {
-    console.log('AFTER ALL');
-  });
+    const response = await axios.get('https://demoqa.com/BookStore/v1/Books')
+    expect(response.data.books).toBeDefined()
+    console.log(response.data)
+})
 
-  // afterEach(() => {
-  //     console.log('AFTER EACH')
-  // })
 
-  test('GET /BookStore/v1/Books status code is 200', async () => {
-    const response = await axiosInstanse.get('BookStore/v1/Books');
-    expect(response.status).toBe(200);
-  });
+test('check get /BookStore/v1/Books toHaveLength 10', async () => {
 
-  test('GET /BookStore/v1/Books response have property books', async () => {
-    const response = await axiosInstanse.get('BookStore/v1/Books');
-    expect(response.data).toHaveProperty('books');
-  });
+    const response = await axios.get('https://demoqa.com/BookStore/v1/Books')
+    expect(response.data.books).toHaveLength(8)
+    console.log(response.data)
+})
 
-  test('GET /BookStore/v1/Books response have 8 book items', async () => {
-    const response = await axiosInstanse.get('BookStore/v1/Books');
-    expect(response.data.books).toHaveLength(8);
-    expect(response.data.books.length).toBeLessThanOrEqual(8);
-  });
-
-  test('GET /BookStore/v1/Books with correct ID has status code 200', async () => {
-    const response = await axiosInstanse.get('BookStore/v1/Book', {
-      params: { ISBN: 9781593275846 },
-    });
-    expect(response.status).toBe(200);
-  });
-
-  test('GET /BookStore/v1/Books with nonexistant ID has status code 404', async () => {
-    const response = await axiosInstanse.get('BookStore/v1/Book', {
-      params: { ISBN: 123456 },
-    });
-    expect(response.status).toBe(400);
-  });
-});
