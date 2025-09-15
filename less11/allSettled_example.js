@@ -1,1 +1,3 @@
-Promise.allSettled([Promise.resolve(1), Promise.reject("Err")]).then(console.log);
+Promise.allSettled([Promise.resolve(1), Promise.reject('Err')]).then(
+  console.log,
+);

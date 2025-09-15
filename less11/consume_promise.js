@@ -1,3 +1,3 @@
-Promise.resolve("Дані").then(data => console.log(data));
+Promise.resolve('Дані').then((data) => console.log(data));
 
-new Promise(resolve => resolve("Данні"))
+new Promise((resolve) => resolve('Данні'));

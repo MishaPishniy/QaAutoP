@@ -1,0 +1,3 @@
+#!/bin/sh
+npx prettier --write . --log-level=error > /dev/null 2>&1
+npx eslint . --no-color -f stylish

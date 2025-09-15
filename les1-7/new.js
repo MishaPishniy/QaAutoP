@@ -40,7 +40,6 @@ console.log( s1 === s2 )
 
 + - * / % ***/
 
-
 /* let b = 10
 let z 
 z = a + b
@@ -61,7 +60,7 @@ console.log(5%10)
 
 a += 5
 console.log(a) */
-
+/*
 let a = 2
 let b = "2"
 
@@ -72,4 +71,4 @@ console.log ( a != b)
 >= 
 <=
 
-&& || ! 
+&& || ! */

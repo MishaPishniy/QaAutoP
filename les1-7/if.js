@@ -1,4 +1,4 @@
-if (умова) {
+/*if (умова) {
 
     // якийсь код  = true
 } else {
@@ -60,4 +60,4 @@ if (isLogin) {
     }
 } else  {
     console.log("Login in system")
-} 
+} */

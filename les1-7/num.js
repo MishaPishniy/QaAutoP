@@ -1,4 +1,4 @@
-console.log( 0.1 + 0.2 == 0.3)
+/*console.log( 0.1 + 0.2 == 0.3)
 console.log(0.3 - 0.1 )
 console.log(0.015 * 0.2 )
 console.log(0.3/0.1)
@@ -62,3 +62,4 @@ console.log(area)
 let radius = 5 ;
 let area = Math.PI * Math.pow(radius,2)
 console.log(area)
+*/

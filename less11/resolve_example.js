@@ -1,1 +1,1 @@
-Promise.resolve("OK").then(console.log);
+Promise.resolve('OK').then(console.log);

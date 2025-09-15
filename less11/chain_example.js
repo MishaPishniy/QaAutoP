@@ -1,4 +1,4 @@
-Promise.resolve(1).then(x => x + 1).then(console.log);
+/* Promise.resolve(1).then(x => x + 1).then(console.log);
 
 const getUser = new Promise((resolve, reject) => {
 
@@ -25,3 +25,4 @@ return users.map(u => u.toUpperCases());
 .then(count => console.log("Кількість ",count);
 return `Кількість ${count}`;)
 .catch(error => console.log("Логіни не прийшли",error))
+ */

@@ -1,1 +1,1 @@
-Promise.reject("Bad").catch(console.log);
+Promise.reject('Bad').catch(console.log);

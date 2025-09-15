@@ -1,4 +1,4 @@
 async function hello() {
-  return "Привіт";
+  return 'Привіт';
 }
 hello().then(console.log);

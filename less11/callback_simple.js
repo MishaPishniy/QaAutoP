@@ -1,6 +1,6 @@
 function orderPizza(callback) {
-  console.log("Замовляю піцу");
-  callback("Піца готова!");
+  console.log('Замовляю піцу');
+  callback('Піца готова!');
 }
 
 orderPizza((message) => {

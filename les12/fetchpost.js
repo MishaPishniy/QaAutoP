@@ -1,21 +1,21 @@
- fetch("https://jsonplaceholder.typicode.com/posts", {
-    method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify ({
-        name : 'Jhon Doe',
-        age : 30 ,
-        email: 'JhonDOe@gmail.com'
-      })
-    })
-     .then(response => response.json())
-  .then(data => {
-      console.log(data);
-    })
-    .catch(error => {
-      console.error("Помилка:", error);
-    });
+fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    name: 'Jhon Doe',
+    age: 30,
+    email: 'JhonDOe@gmail.com',
+  }),
+})
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error('Помилка:', error);
+  });
 
 //2 priklad
 fetch('https://jsonplaceholder.typicode.com/posts', {

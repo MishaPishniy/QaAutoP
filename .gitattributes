@@ -1,0 +1,3 @@
+# Всегда LF для shell-скриптов и хуков
+*.sh text eol=lf
+.husky/* text eol=lf

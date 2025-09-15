@@ -1,1 +1,1 @@
-Promise.reject("Помилка");
+Promise.reject('Помилка');

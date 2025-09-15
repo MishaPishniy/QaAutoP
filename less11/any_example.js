@@ -1,1 +1,1 @@
-Promise.any([Promise.reject("Bad"), Promise.resolve("Good")]).then(console.log);
+Promise.any([Promise.reject('Bad'), Promise.resolve('Good')]).then(console.log);

@@ -1,1 +1,1 @@
-Promise.resolve("OK").finally(() => console.log("Кінець"));
+Promise.resolve('OK').finally(() => console.log('Кінець'));
