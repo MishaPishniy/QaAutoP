@@ -4,12 +4,18 @@ import globals from 'globals';
 
 export default [
   // ← игнорируем учебные папки целиком
-  { ignores: [
-      'node_modules/**', 'dist/**',
-      'les1-7/**', 'les7/**', 'less7/**',
-      'les11/**', 'less11/**',
-      'les12/**'
-    ] },
+  {
+    ignores: [
+      'node_modules/**',
+      'dist/**',
+      'les1-7/**',
+      'les7/**',
+      'less7/**',
+      'les11/**',
+      'less11/**',
+      'les12/**',
+    ],
+  },
 
   js.configs.recommended,
 
@@ -23,7 +29,10 @@ export default [
     },
     rules: {
       // мягче к временам неиспользуемым переменным
-      'no-unused-vars': ['warn', { varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
+      'no-unused-vars': [
+        'warn',
+        { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
+      ],
     },
   },
 

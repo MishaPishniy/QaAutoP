@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const hellelApi = await axios.get('https://api.restful-api.dev/objects',{
-   params: {
-      id: 'ff8081819782e69e01994e4990a749dc'
-   }
+const hellelApi = await axios.get('https://api.restful-api.dev/objects', {
+  params: {
+    id: 'ff8081819782e69e01994e4990a749dc',
+  },
 });
 console.log(hellelApi.data);
 
@@ -22,5 +22,3 @@ const res = await axios.post(
 );
 console.log(res.status);
 console.log(res.data);
-
-
