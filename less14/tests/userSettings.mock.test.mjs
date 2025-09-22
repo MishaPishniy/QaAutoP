@@ -4,7 +4,7 @@ import { jest, describe, test, expect, afterEach } from "@jest/globals";
 const axiosGet = jest.fn();
 const axiosPut = jest.fn();
 
-// 🧙 важливо: у ESM мок модулів робимо ПЕРЕД імпортом тестованого коду
+//  важливо: у ESM мок модулів робимо ПЕРЕД імпортом тестованого коду
 await jest.unstable_mockModule("axios", () => ({
   default: {
     get: axiosGet,
