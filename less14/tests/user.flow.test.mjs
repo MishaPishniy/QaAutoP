@@ -27,7 +27,7 @@ describe('User flow: signup → settings GET/PUT (через cookie sid)', () =>
     expect(res.data).toHaveProperty('data.currency');
     expect(res.data).toHaveProperty('data.distanceUnits');
 
-    // опціонально: якщо хочеш перевіряти конкретні дефолти:
+    // опціонально: якщо хочемо перевіряти конкретні дефолти:
     // expect(res.data.data).toMatchObject({ currency: "usd", distanceUnits: "km" });
   });
 
