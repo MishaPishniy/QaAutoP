@@ -2,13 +2,13 @@ name: API Tests
 
 on:
   push:
-    branches: [ main ]        # або своя гілка
+    branches: [main] # або своя гілка
     paths:
-      - "less14/**"
-      - "jest.config.js"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/api-tests.yml"
+      - 'less14/**'
+      - 'jest.config.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/api-tests.yml'
   pull_request:
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"     # твоя версія Node, локально в тебе 22
+          node-version: '22' # твоя версія Node, локально в тебе 22
 
       - name: Install dependencies
         run: npm ci

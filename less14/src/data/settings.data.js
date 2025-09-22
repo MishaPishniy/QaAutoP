@@ -1,4 +1,4 @@
 export const defaultSettings = {
-  currency: "usd",
-  distanceUnits: "km"
+  currency: 'usd',
+  distanceUnits: 'km',
 };
