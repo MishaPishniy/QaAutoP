@@ -1,8 +1,7 @@
 // "базовий" користувач
-import { faker } from '@faker-js/faker';
 
 export const baseUser = {
-  name: faker.person.fullName(),
+  name: 'John',
   lastName: 'Dou',
   password: 'Qwerty12345',
   repeatPassword: 'Qwerty12345',
