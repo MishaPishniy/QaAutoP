@@ -4,7 +4,7 @@
   "description": "Hello new project\r add index.html\r asfasdfcsa\r cscsacca",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "node --no-warnings --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "format": "prettier --write .",
     "lint": "eslint .",
     "prepare": "husky install"
@@ -31,6 +31,7 @@
     "globals": "^16.4.0",
     "husky": "^9.1.7",
     "jest": "^30.1.3",
+    "jest-html-reporters": "^3.1.7",
     "lint-staged": "^16.1.6",
     "prettier": "^3.6.2"
   },
