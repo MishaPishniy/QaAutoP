@@ -3,7 +3,7 @@ import { uniqueEmail } from '../src/utils/email.js';
 import { signupAndCaptureSid } from '../src/auth/auth.api.js';
 
 describe('POST /auth/signup + PUT /users/settings (кука sid)', () => {
-  test('201: створює користувача і повертає налаштування', async () => {
+  test('201: створює користувача повертає налаштування', async () => {
     const email = uniqueEmail('qa');
     const payload = {
       name: 'John',
@@ -22,7 +22,7 @@ describe('POST /auth/signup + PUT /users/settings (кука sid)', () => {
     expect(res.data).toHaveProperty('data.currency');
   });
 
-  test('400: дубльований email → Bad Request', async () => {
+  test('400: дубльований email  Bad Request', async () => {
     const sameEmail = uniqueEmail('dup');
 
     // 1-й запит — реєстрація

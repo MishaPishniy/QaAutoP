@@ -23,6 +23,7 @@
   "homepage": "https://github.com/MishaPishniy/QaAutoP#readme",
   "devDependencies": {
     "@eslint/js": "^9.35.0",
+    "axios-mock-adapter": "^2.1.0",
     "eslint": "^9.35.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-formatter-unix": "^8.40.0",
@@ -36,6 +37,7 @@
     "prettier": "^3.6.2"
   },
   "dependencies": {
+    "@faker-js/faker": "^10.0.0",
     "axios": "^1.12.2"
   }
 }

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { randomUUID } from 'node:crypto';
 import { logRequest, logResponse, logError } from './logger.js';
-import { getSid, setSid } from '../auth/session.js'; // ⬅️ додали
+import { getSid, setSid } from '../auth/session.js'; // 
 
 const BASE_URL = 'https://qauto.forstudy.space/api';
 const TIMEOUT_MS = 10000;
