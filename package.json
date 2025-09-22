@@ -4,7 +4,7 @@
   "description": "Hello new project\r add index.html\r asfasdfcsa\r cscsacca",
   "main": "index.js",
   "scripts": {
-    "test": "node --no-warnings --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+    "test": "node --no-warnings --experimental-vm-modules ./node_modules/jest/bin/jest.js --reporters=default --reporters=jest-html-reporters",
     "format": "prettier --write .",
     "lint": "eslint .",
     "prepare": "husky install"

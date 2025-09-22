@@ -2,13 +2,14 @@ name: API Tests
 
 on:
   push:
-    branches: [main] # або своя гілка
+    branches: [ main ]         # або заміни на "**", щоб запускати з будь-якої гілки
     paths:
-      - 'less14/**'
-      - 'jest.config.js'
-      - 'package.json'
-      - 'package-lock.json'
-      - '.github/workflows/api-tests.yml'
+      - "less14/**"
+      - "jest.config.js"
+      - "package.json"
+      - "package-lock.json"
+      - "jesthtmlreporter.config.json"
+      - ".github/workflows/api-tests.yml"
   pull_request:
 
 jobs:
@@ -22,18 +23,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22' # твоя версія Node, локально в тебе 22
+          node-version: "22"   # вкажи ту ж версію Node, що й локально
 
       - name: Install dependencies
         run: npm ci
 
       - name: Run Jest API tests
         run: |
-          npm test -- --runTestsByPath less14/tests/user.flow.test.mjs
+          npm test
 
       - name: Upload HTML report
         uses: actions/upload-artifact@v4
         with:
           name: jest-html-report
           path: reports/html/report.html
-          if-no-files-found: warn
+          if-no-files-found: error
